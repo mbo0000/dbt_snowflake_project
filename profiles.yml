@@ -1,0 +1,14 @@
+dbt_personal:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWF_ACCOUNT') }}"
+      user: "{{ env_var('SNOWF_USER') }}"
+      password: "{{ env_var('SNOWF_PASSWORD') }}"
+      role: "{{ env_var('SNOWF_ROLE') }}"
+      database: "{{ env_var('SNOWF_DATABASE') }}"
+      warehouse: "{{ env_var('SNOWF_WAREHOUSE') }}"
+      schema: "{{ env_var('SNOWF_SCHEMA') }}"
+      threads: 1
+      client_session_keep_alive: False
