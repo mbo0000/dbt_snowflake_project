@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: games
+    description: TODO
+    columns:
+      - name: ID
+        description: game Id
+        tests:
+          - unique
+          - not_null

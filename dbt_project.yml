@@ -40,6 +40,9 @@ models:
         +schema: nba
     
     analytics:
-      +materialized: view
+      +materialized: table
       +database: analytics
+        
+      nba:
+        +schema: nba
       

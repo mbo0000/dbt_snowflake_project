@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: games_extended
+    description: TODO
+    columns:
+      - name: TODO 
+        description: TODO 

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: games_statistics
+    description: TODO
+    columns:
+      - name: GAME_ID
+        description: game Id
+        tests:
+          - relationships:
+              to: ref('games')
+              field: id
